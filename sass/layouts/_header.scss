@@ -1,0 +1,215 @@
+.header {
+    // position: sticky;
+    // top: 0;
+    // z-index: 1000;
+    background: var(--white-97);
+}
+
+.top-ban {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange-50);
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--absolute-white);
+    }
+    &__img {
+        margin-top: 5px;
+        vertical-align: middle;
+    }
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__but {
+        display: flex;
+        align-items: center;
+    }
+    &__but-authoriz-s {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-15);
+        margin-right: 3px;
+    }
+    &__but-authoriz-l {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--absolute-white);
+        background: var(--orange-50);
+    }
+}
+
+/* Стили для десктопа */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .header {
+        width: 1920px;
+        padding: 20px 30px;
+        background: var(--white-97);
+    }
+    .top-ban {
+        border-radius: 8px;
+        max-width: 1860px;
+        padding: 14px 0;
+        &__text {
+            font-size: 18px;
+            margin-right: 23px;
+        }
+        &__img {
+            transition: var(--func-transit);
+            &:hover {
+                transform: scale(0.8);
+            }
+        }
+    }
+    .nav-bar {
+        padding: 20px 132px;
+        &__logo {
+            width: 54px;
+            height: 54px;
+            margin-right: 50px;
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+        &__link {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: var(--grey-15);
+            border-radius: 8px;
+            padding: 14px 24px;
+            width: 100px;
+            transition: var(--func-transit);
+            &:hover {
+                background: var(--white-95);
+            }
+        }
+        &__but-authoriz-s {
+            font-size: 18px;
+            border-radius: 8px;
+            padding: 14px 34px;
+            transition: var(--func-transit);
+            &:hover {
+                color: var(--absolute-white);
+                background: var(--orange-50);
+            }
+        }
+        &__but-authoriz-l {
+            font-size: 18px;
+            border-radius: 8px;
+            padding: 14px 38px;
+            transition: var(--func-transit);
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        &__but-burger {
+            display: none;
+        }
+    }
+}
+
+/* Стили для планшета */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        width: 1023px;
+        padding: 20px;
+    }
+    .top-ban {
+        border-radius: 6px;
+        max-width: 1440px;
+        padding: 10px 0;
+        &__text {
+            font-size: 14px;
+            margin-right: 23px;
+        }
+    }
+    .nav-bar {
+        padding: 20px 60px;
+        &__logo {
+            width: 44px;
+            height: 44px;
+            margin-right: 50px;
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+        &__link {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: var(--grey-15);
+            border-radius: 6px;
+            padding: 12px 20px;
+        }
+        &__but-authoriz-s {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 12px 24px;
+        }
+        &__but-authoriz-l {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 12px 28px;
+        }
+        &__but-burger {
+            display: none;
+        }
+    }
+}
+
+/* Стили для мобильного */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .header {
+        width: 100%;
+        padding: 40px 16px 14px 16px;
+    }
+    .top-ban {
+        border-radius: 6px;
+        width: 100%;
+        padding: 10px 0;
+        &__text {
+            font-size: 14px;
+            margin-right: 12px;
+        }
+    }
+    .nav-bar {
+        padding: 16px 0;
+        &__logo {
+            width: 40px;
+            height: 40px;
+        }
+        &__nav {
+            display: none;
+        }
+        &__but-authoriz-s {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 12px 20px;
+        }
+        &__but-authoriz-l {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 12px 24px;
+            margin-right: 3px;
+        }
+        &__but-burger {
+            display: block;
+        }
+    }
+}

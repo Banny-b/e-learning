@@ -1,0 +1,306 @@
+.courses {
+    background: var(--white-97);
+    &__container {
+        margin: 0 auto;
+    }
+    &__inner {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-35);
+    }
+    &__title-btn {
+        @include view-btn;
+    }
+    &__list {
+        display: grid;
+    }
+    &__card {
+        border: 1px solid var(--white-95);
+        background: var(--absolute-white);
+    }
+    &__pic {
+        width: 100%;
+    }
+    &__subbox-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__subbox-2 {
+        display: flex;
+        align-items: center;
+    }
+    &__subbox-text-1 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        color: var(--grey-30);
+        border: 1px solid var(--white-95);
+    }
+    &__subbox-text-2 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        color: var(--grey-30);
+        border: 1px solid var(--white-95);
+    }
+    &__subbox-text-3 {
+        font-family: var(--font-family);
+        font-weight: 500;
+        color: var(--grey-15);
+    }
+    &__subbox-title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__subbox-text-4 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-30);
+    }
+    &__card-btn {
+        display: block;
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        text-align: center;
+        color: var(--grey-15);
+        border: 1px solid var(--white-95);
+        background: var(--white-97);
+    }
+}
+
+/* Стили для десктопа */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .courses {
+        width: 1920px;
+        padding: 100px 0 108px 0;
+        &__container {
+            width: 1597px;
+        }
+        &__inner {
+            margin-bottom: 80px;
+        }
+        &__title {
+            font-size: 48px;
+            margin-bottom: 6px;
+        }
+        &__text {
+            font-size: 18px;
+            max-width: 1177px;
+        }
+        &__title-btn {
+            @include view-btn;
+        }
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        &__card {
+            border-radius: 12px;
+            padding: 50px;
+            width: 783px;
+        }
+        &__box {
+            margin-bottom: 30px;
+        }
+        &__pic {
+            margin-bottom: 30px;
+        }
+        &__subbox-1 {
+            margin-bottom: 30px;
+        }
+        &__subbox-text-1 {
+            font-size: 18px;
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin-right: 3px;
+        }
+        &__subbox-text-2 {
+            font-size: 18px;
+            border-radius: 8px;
+            padding: 10px 16px;
+        }
+        &__subbox-text-3 {
+            font-size: 20px;
+        }
+        &__subbox-title {
+            font-size: 24px;
+            margin-bottom: 14px;
+        }
+        &__subbox-text-4 {
+            font-size: 18px;
+            min-height: 84px;
+        }
+        &__card-btn {
+            font-size: 18px;
+            border-radius: 8px;
+            padding: 18px 24px;
+            transition: var(--func-transit);
+            &:hover {
+                color: var(--absolute-white);
+                background: var(--grey-60);
+            }
+        }
+    }
+}
+
+/* Стили для планшета */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .courses {
+        width: 1023px;
+        padding: 100px 0;
+        &__container {
+            width: 863px;
+        }
+        &__inner {
+            margin-bottom: 60px;
+        }
+        &__title {
+            font-size: 38px;
+            margin-bottom: 4px;
+        }
+        &__text {
+            font-size: 16px;
+            max-width: 600px;
+        }
+        &__title-btn {
+            @include view-btn;
+        }
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        &__card {
+            border-radius: 10px;
+            padding: 23px;
+            width: 406px;
+        }
+        &__box {
+            margin-bottom: 24px;
+        }
+        &__pic {
+            margin-bottom: 24px;
+        }
+        &__subbox-1 {
+            margin-bottom: 24px;
+        }
+        &__subbox-text-1 {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 8px 14px;
+            margin-right: 2px;
+        }
+        &__subbox-text-2 {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 8px 14px;
+        }
+        &__subbox-text-3 {
+            font-size: 16px;
+        }
+        &__subbox-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        &__subbox-text-4 {
+            font-size: 16px;
+            min-height: 120px;
+        }
+        &__card-btn {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 14px 24px;
+        }
+    }
+}
+
+/* Стили для мобильного */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .courses {
+        padding: 50px 0;
+        &__container {
+            width: 357px;
+        }
+        &__inner {
+            align-items: flex-start;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        &__title {
+            font-size: 28px;
+            margin-bottom: 4px;
+        }
+        &__text {
+            font-size: 14px;
+            max-width: 357px;
+            margin-bottom: 20px;
+        }
+        &__title-btn {
+            @include view-btn;
+        }
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+        &__card {
+            border-radius: 10px;
+            padding: 23px;
+            width: 357px;
+        }
+        &__box {
+            margin-bottom: 24px;
+        }
+        &__pic {
+            margin-bottom: 24px;
+        }
+        &__subbox-1 {
+            align-items: flex-start;
+            flex-direction: column;
+            margin-bottom: 24px;
+        }
+        &__subbox-2 {
+            margin-bottom: 14px;
+        }
+        &__subbox-text-1 {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 8px 14px;
+            margin-right: 2px;
+        }
+        &__subbox-text-2 {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 8px 14px;
+        }
+        &__subbox-text-3 {
+            font-size: 16px;
+        }
+        &__subbox-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__subbox-text-4 {
+            font-size: 14px;
+            // min-height: 105px;
+        }
+        &__card-btn {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 14px 24px;
+        }
+    }
+}

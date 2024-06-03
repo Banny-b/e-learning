@@ -1,0 +1,47 @@
+/* Общие стили для контейнера */
+.container {
+    width: 100%; /* Ширина контейнера по умолчанию */
+    box-sizing: border-box; /* Учитываем padding в ширине элемента */
+    // background: var(--white-97); /* Цвет фона */
+}
+
+/* Стили для десктопа (ширина от 1024px до 1920px) */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .container {
+      max-width: 1595px; /* Максимальная ширина контейнера для десктопа */
+      margin: 0 auto; /* Центрирование по горизонтали */
+    }
+}
+
+/* Стили для планшета (ширина от 768px до 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      max-width: 1023px; /* Максимальная ширина контейнера для планшета */
+      margin: 0 auto; /* Центрирование по горизонтали */
+    }
+}
+
+/* Стили для мобильного (ширина от 320px до 767px) */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+      // max-width: 358px; /* Максимальная ширина контейнера для мобильного */
+      margin: 0 auto; /* Центрирование по горизонтали */
+    }
+}
+
+
+
+/* Стили для десктопа */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+
+}
+
+/* Стили для планшета */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Стили для мобильного */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+}

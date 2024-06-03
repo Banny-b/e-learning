@@ -1,0 +1,379 @@
+.pricing {
+    background: var(--white-97);
+    &__container {
+        margin: 0 auto;
+    }
+    &__inner {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-35);
+    }
+    &__tab {
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        padding: 12px;
+        background: var(--absolute-white);
+    }
+    &__btn-1 {
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--absolute-white);
+        background: var(--orange-50);
+    }
+    &__btn-2 {
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--grey-30);
+        margin-left: 3px;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background: var(--absolute-white);
+    }
+    &__card {
+        border: 1px solid var(--white-95);
+        background: var(--white-99);
+    }
+    &__plan {
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 169%;
+        color: var(--grey-15);
+        border: 1px solid var(--orange-90);
+        background: var(--orange-97);
+        text-align: center;
+    }
+    &__price {
+        font-family: var(--font-family);
+        font-weight: 600;
+        line-height: 73%;
+        color: var(--grey-15);
+        text-align: center;
+    }
+    &__month {
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 73%;
+        color: var(--grey-30);
+    }
+    &__content {
+        border: 1px solid var(--white-95);
+        border-radius: 14px 14px 0 0;
+        background: var(--absolute-white);
+    }
+    &__feature {
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        text-align: center;
+        color: var(--grey-15);
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--white-95);
+        margin: 0 auto;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__item-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-30);
+    }
+    &__btn {
+        font-family: var(--font-family);
+        font-weight: 600;
+        line-height: 150%;
+        text-align: center;
+        color: var(--absolute-white);
+        width: 100%;
+        background: var(--orange-50);
+    }
+}
+
+/* Стили для десктопа */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .pricing {
+        width: 1920px;
+        padding: 160px 0 150px 0;
+        &__container {
+            width: 1597px;
+        }
+        &__inner {
+            margin-bottom: 80px;
+        }
+        &__title {
+            font-size: 48px;
+            margin-bottom: 6px;
+        }
+        &__text {
+            font-size: 18px;
+            max-width: 1025px;
+        }
+        &__btn-1 {
+            font-size: 18px;
+            border-radius: 6px;
+            padding: 14px 30px;
+            transition: var(--func-transit);
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        &__btn-2 {
+            font-size: 18px;
+            border-radius: 6px;
+            padding: 14px 30px;
+            transition: var(--func-transit);
+            &:hover {
+                color: var(--absolute-white);
+                background: var(--orange-50);
+            }
+        }
+        &__box {
+            gap: 30px;
+            border-radius: 12px;
+            padding: 80px;
+        }
+        &__card {
+            border-radius: 12px;
+            padding: 50px 30px 30px 30px;
+        }
+        &__plan {
+            font-size: 22px;
+            border-radius: 6px;
+            padding: 12px 22px;
+            margin-bottom: 50px;
+        }
+        &__price {
+            font-size: 80px;
+            margin-bottom: 50px;
+        }
+        &__month {
+            font-size: 20px;
+        }
+        &__content {
+            padding: 40px;
+            width: 643px;
+        }
+        &__feature {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        &__item {
+            border-radius: 8px;
+            padding: 14px;
+            width: 503px;
+        }
+        &__item-check {
+            border-radius: 6px;
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+        }
+        &__item-text {
+            font-size: 18px;
+        }
+        &__btn {
+            font-size: 18px;
+            border-radius: 0 0 8px 8px;
+            padding: 20px 24px;
+            margin-top: 40px;
+            transition: var(--func-transit);
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+/* Стили для планшета */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .pricing {
+        width: 1023px;
+        padding: 100px 0;
+        &__container {
+            width: 863px;
+        }
+        &__inner {
+            margin-bottom: 60px;
+        }
+        &__title {
+            font-size: 38px;
+            margin-bottom: 4px;
+        }
+        &__text {
+            font-size: 16px;
+            max-width: 502px;
+        }
+        &__btn-1 {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 12px 24px;
+        }
+        &__btn-2 {
+            font-size: 14px;
+            border-radius: 100px;
+            padding: 12px 24px;
+        }
+        &__box {
+            gap: 24px;
+            border-radius: 12px;
+            padding: 40px;
+        }
+        &__card {
+            border-radius: 12px;
+            padding: 40px 24px 24px 24px;
+        }
+        &__plan {
+            font-size: 18px;
+            border-radius: 4px;
+            padding: 10px 22px;
+            margin-bottom: 50px;
+        }
+        &__price {
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+        &__month {
+            font-size: 16px;
+        }
+        &__content {
+            padding: 30px;
+            max-width: 334px;
+        }
+        &__feature {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+        &__item {
+            border-radius: 6px;
+            padding: 2px 12px;
+            max-width: 306px;
+            min-height: 86px;
+        }
+        &__item-check {
+            border-radius: 4px;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        &__item-text {
+            font-size: 14px;
+        }
+        &__btn {
+            font-size: 14px;
+            border-radius: 0 0 8px 8px;
+            padding: 20px 24px;
+            margin-top: 30px;
+        }
+    }
+}
+
+/* Стили для мобильного */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .pricing {
+        padding: 50px 0;
+        &__container {
+            width: 357px;
+        }
+        &__inner {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        &__title {
+            font-size: 28px;
+            margin-bottom: 4px;
+        }
+        &__text {
+            font-size: 14px;
+            max-width: 357px;
+            margin-bottom: 20px;
+        }
+        &__tab {
+            margin: 0 auto;
+        }
+        &__btn-1 {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 12px 24px;
+        }
+        &__btn-2 {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 12px 24px;
+        }
+        &__box {
+            flex-direction: column;
+            gap: 24px;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        &__card {
+            border-radius: 12px;
+            padding: 30px 20px 20px 20px;
+        }
+        &__plan {
+            font-size: 16px;
+            border-radius: 4px;
+            padding: 8px 22px;
+            margin-bottom: 30px;
+        }
+        &__price {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        &__month {
+            font-size: 14px;
+        }
+        &__content {
+            border-radius: 10px 10px 0 0;
+            padding: 20px;
+            max-width: 277px;
+        }
+        &__feature {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        &__item {
+            border-radius: 6px;
+            padding: 12px;
+            max-width: 237px;
+        }
+        &__item-check {
+            border-radius: 4px;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        &__item-text {
+            font-size: 14px;
+        }
+        &__btn {
+            font-size: 14px;
+            border-radius: 0 0 8px 8px;
+            padding: 18px 24px;
+            margin-top: 20px;
+        }
+    }
+}

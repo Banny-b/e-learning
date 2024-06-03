@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="top">
+        <div class="top-ban">
+            <p class="top-ban__text">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+            <a class="top-ban__link" href="#">
+                <svg class="top-ban__img" width="24" height="24">
+                    <use href="./img/header/arrow.svg#arrow-r"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="nav-bar">
+            <div class="nav-bar__container">
+                <a class="nav-bar__logo" href="#">
+                    <img class="nav-bar__img" src="./img/header/logo.png" alt="logo img">
+                </a>
+                <nav class="nav-bar__nav">
+                    <ul class="nav-bar__list list">
+                        <li class="nav-bar__item"><a class="nav-bar__link link" href="">Home</a></li>
+                        <li class="nav-bar__item"><a class="nav-bar__link link" href="">Courses</a></li>
+                        <li class="nav-bar__item"><a class="nav-bar__link link" href="">About Us</a></li>
+                        <li class="nav-bar__item"><a class="nav-bar__link link" href="">Pricing</a></li>
+                        <li class="nav-bar__item"><a class="nav-bar__link link" href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-bar__but">
+                <a class="nav-bar__but-authoriz-s link" href="">Sign Up</a>
+                <a class="nav-bar__but-authoriz-l link" href="">Log In</a>
+                <a class="nav-bar__but-burger" href="">
+                    <svg class="nav-bar__but-img" width="34" height="34">
+                        <use href="./img/header/burger.svg#burger"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__inner">
+            <img class="hero__abstrct"  src="./img/hero/abstract.png" alt="Abstract lines">
+            <div class="hero__welcom">
+                <img class="hero__icon" src="./img/hero/icon-hero.png" alt="Hero image">
+                <h1 class="hero__title"><span class="hero__title-span">Your</span> Creative Potential</h1>
+            </div>
+            <p class="hero__text">with Online Design and Development Courses.</p>
+            <p class="hero__subtext">Learn from Industry Experts and Enhance Your Skills.</p>
+            <div class="hero__butt-container">
+                <a class="hero__btn-c link" href="">Explore Courses</a>
+                <a class="hero__btn-p link" href="">View Pricing</a>
+            </div>
+        </div>
+    </section>
+    <!-- Cards -->
+    <section class="card">
+        <ul class="card__list">
+            <li class="card__item">
+                <a class="card__link" href="#">
+                    <img class="card__img" src="./img/card/card-1.png" alt="Zapier image">
+                </a>
+            </li>
+            <div class="card__line"></div>
+            <li class="card__item">
+                <a class="card__link" href="#">
+                    <img class="card__img" src="./img/card/card-2.png" alt="Spotify image">
+                </a>
+            </li>
+            <div class="card__line"></div>
+            <li class="card__item">
+                <a class="card__link" href="#">
+                    <img class="card__img" src="./img/card/card-3.png" alt="Zoom image">
+                </a>
+            </li>
+            <div class="card__line"></div>
+            <li class="card__item">
+                <a class="card__link" href="#">
+                    <img class="card__img" src="./img/card/card-4.png" alt="Amazon image">
+                </a>
+            </li>
+            <div class="card__line"></div>
+            <li class="card__item">
+                <a class="card__link" href="#">
+                    <img class="card__img" src="./img/card/card-5.png" alt="Adobe image">
+                </a>
+            </li>
+            <div class="card__line"></div>
+            <li class="card__item">
+                <a class="card__link" href="#">
+                    <img class="card__img" src="./img/card/card-6.png" alt="Notion image">
+                </a>
+            </li>
+            <div class="card__line"></div>
+            <li class="card__item">
+                <a class="card__link" href="#">
+                    <img class="card__img" src="./img/card/card-7.png" alt="Netflix image">
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- Video -->
+    <section class="video">
+        <div class="video__img" id="media-container" onclick="toggleMedia()">
+            <picture>
+                <source srcset="./img/video/video-desk.png" media="(min-width: 1024px)">
+                <source srcset="./img/video/video-tab.png" media="(min-width: 768px)">
+                <source srcset="./img/video/video-mob.png" media="(max-width: 767px)">
+                <img class="video__pic" src="./img/video/video.jpg" alt="Video image">
+            </picture>
+        </div>
+        <div class="video__vid" id="video-container">
+            <video class="video__play" id="video" controls>
+                <source src="./img/video/e-learning.mp4" type="video/mp4">
+            </video>
+            <div class="video__message" id="unsupported-message">
+                Not supported video!
+            </div>
+        </div>
+    </section>
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="benefits__container">
+            <div class="benefits__upper">
+                <h2 class="benefits__title">Benefits</h2>
+                <div class="benefits__title-inner">
+                    <p class="benefits__title-text">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. 
+                        Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
+                    </p>
+                    <a class="benefits__title-btn link" href="">View All</a>
+                </div>
+            </div>
+            <ul class="benefits__list">
+                <li class="benefits__item">
+                    <p class="benefits__item-num">01</p>
+                    <h3 class="benefits__item-tit">Flexible Learning Schedule</h3>
+                    <p class="benefits__item-txt">Fit your coursework around your existing commitments and obligations.</p>
+                    <a class="benefits__item-btn" href="">
+                        <svg class="benefits__item-img" width="34" height="34">
+                            <use href="./img/benefits/arrow-to.svg#icon-arrow-to"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="benefits__item">
+                    <p class="benefits__item-num">02</p>
+                    <h3 class="benefits__item-tit">Expert Instruction</h3>
+                    <p class="benefits__item-txt">Learn from industry experts who have hands-on experience in design and development.</p>
+                    <a class="benefits__item-btn" href="">
+                        <svg class="benefits__item-img" width="34" height="34">
+                            <use href="./img/benefits/arrow-to.svg#icon-arrow-to"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="benefits__item">
+                    <p class="benefits__item-num">03</p>
+                    <h3 class="benefits__item-tit">Diverse Course Offerings</h3>
+                    <p class="benefits__item-txt">Explore a wide range of design and development courses covering various topics.</p>
+                    <a class="benefits__item-btn" href="">
+                        <svg class="benefits__item-img" width="34" height="34">
+                            <use href="./img/benefits/arrow-to.svg#icon-arrow-to"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="benefits__item">
+                    <p class="benefits__item-num">04</p>
+                    <h3 class="benefits__item-tit">Updated Curriculum</h3>
+                    <p class="benefits__item-txt">Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
+                    <a class="benefits__item-btn" href="">
+                        <svg class="benefits__item-img" width="34" height="34">
+                            <use href="./img/benefits/arrow-to.svg#icon-arrow-to"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="benefits__item">
+                    <p class="benefits__item-num">05</p>
+                    <h3 class="benefits__item-tit">Practical Projects and Assignments</h3>
+                    <p class="benefits__item-txt">Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+                    <a class="benefits__item-btn" href="">
+                        <svg class="benefits__item-img" width="34" height="34">
+                            <use href="./img/benefits/arrow-to.svg#icon-arrow-to"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="benefits__item">
+                    <p class="benefits__item-num">06</p>
+                    <h3 class="benefits__item-tit">Interactive Learning Environment</h3>
+                    <p class="benefits__item-txt">Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
+                    <a class="benefits__item-btn" href="">
+                        <svg class="benefits__item-img" width="34" height="34">
+                            <use href="./img/benefits/arrow-to.svg#icon-arrow-to"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Courses -->
+    <section class="courses">
+        <div class="courses__container">
+            <div class="courses__inner">
+                <div class="courses__text-box">
+                    <h2 class="courses__title">Our Courses</h2>
+                    <p class="courses__text">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. 
+                        Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
+                    </p>
+                </div>
+                <a class="courses__title-btn link" href="">View All</a>
+            </div>
+            <ul class="courses__list">
+                <li class="courses__card">
+                    <div class="courses__box">
+                        <picture>
+                            <source srcset="./img/courses/image_1-desk.png" media="(min-width: 1024px)">
+                            <source srcset="./img/courses/image_1-tab.png" media="(min-width: 768px)">
+                            <source srcset="./img/courses/image_1-mob.png" media="(max-width: 767px)">
+                            <img class="courses__pic" src="./img/courses/image_1-desk.png" alt="Courses image">
+                        </picture>
+                        <div class="courses__subbox">
+                            <div class="courses__subbox-1">
+                                <div class="courses__subbox-2">
+                                    <p class="courses__subbox-text-1">4 Weeks</p>
+                                    <p class="courses__subbox-text-2">Beginner</p>
+                                </div>
+                                <p class="courses__subbox-text-3">By John Smith</p>
+                            </div>
+                            <div class="courses__subbox-3">
+                                <h3 class="courses__subbox-title">Web Design Fundamentals</h3>
+                                <p class="courses__subbox-text-4">Learn the fundamentals of web design, including HTML, CSS, and responsive design 
+                                    principles. Develop the skills to create visually appealing and user-friendly websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="courses__card-btn link" href="">Get it Now</a>
+                </li>
+                <li class="courses__card">
+                    <div class="courses__box">
+                        <picture>
+                            <source srcset="./img/courses/image_2-desk.png" media="(min-width: 1024px)">
+                            <source srcset="./img/courses/image_2-tab.png" media="(min-width: 768px)">
+                            <source srcset="./img/courses/image_2-mob.png" media="(max-width: 767px)">
+                            <img class="courses__pic" src="./img/courses/image_2-desk.png" alt="Courses image">
+                        </picture>
+                        <div class="courses__subbox">
+                            <div class="courses__subbox-1">
+                                <div class="courses__subbox-2">
+                                    <p class="courses__subbox-text-1">6 Weeks</p>
+                                    <p class="courses__subbox-text-2">Intermediate</p>
+                                </div>
+                                <p class="courses__subbox-text-3">By Emily Johnson</p>
+                            </div>
+                            <div class="courses__subbox-3">
+                                <h3 class="courses__subbox-title">UI/UX Design</h3>
+                                <p class="courses__subbox-text-4">Master the art of creating intuitive user interfaces (UI) and enhancing user 
+                                    experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="courses__card-btn link" href="">Get it Now</a>
+                </li>
+                <li class="courses__card">
+                    <div class="courses__box">
+                        <picture>
+                            <source srcset="./img/courses/image_3-desk.png" media="(min-width: 1024px)">
+                            <source srcset="./img/courses/image_3-tab.png" media="(min-width: 768px)">
+                            <source srcset="./img/courses/image_3-mob.png" media="(max-width: 767px)">
+                            <img class="courses__pic" src="./img/courses/image_3-desk.png" alt="Courses image">
+                        </picture>
+                        <div class="courses__subbox">
+                            <div class="courses__subbox-1">
+                                <div class="courses__subbox-2">
+                                    <p class="courses__subbox-text-1">8 Weeks</p>
+                                    <p class="courses__subbox-text-2">Intermediate</p>
+                                </div>
+                                <p class="courses__subbox-text-3">By David Brown</p>
+                            </div>
+                            <div class="courses__subbox-3">
+                                <h3 class="courses__subbox-title">Mobile App Development</h3>
+                                <p class="courses__subbox-text-4">Dive into the world of mobile app development. Learn to build native iOS 
+                                    and Android applications using industry-leading frameworks like Swift and Kotlin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="courses__card-btn link" href="">Get it Now</a>
+                </li>
+                <li class="courses__card">
+                    <div class="courses__box">
+                        <picture>
+                            <source srcset="./img/courses/image_4-desk.png" media="(min-width: 1024px)">
+                            <source srcset="./img/courses/image_4-tab.png" media="(min-width: 768px)">
+                            <source srcset="./img/courses/image_4-mob.png" media="(max-width: 767px)">
+                            <img class="courses__pic" src="./img/courses/image_4-desk.png" alt="Courses image">
+                        </picture>
+                        <div class="courses__subbox">
+                            <div class="courses__subbox-1">
+                                <div class="courses__subbox-2">
+                                    <p class="courses__subbox-text-1">10 Weeks</p>
+                                    <p class="courses__subbox-text-2">Beginner</p>
+                                </div>
+                                <p class="courses__subbox-text-3">By Sarah Thompson</p>
+                            </div>
+                            <div class="courses__subbox-3">
+                                <h3 class="courses__subbox-title">Graphic Design for Beginners</h3>
+                                <p class="courses__subbox-text-4">Discover the fundamentals of graphic design, including typography, color theory, 
+                                    layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="courses__card-btn link" href="">Get it Now</a>
+                </li>
+                <li class="courses__card">
+                    <div class="courses__box">
+                        <picture>
+                            <source srcset="./img/courses/image_5-desk.png" media="(min-width: 1024px)">
+                            <source srcset="./img/courses/image_5-tab.png" media="(min-width: 768px)">
+                            <source srcset="./img/courses/image_5-mob.png" media="(max-width: 767px)">
+                            <img class="courses__pic" src="./img/courses/image_5-desk.png" alt="Courses image">
+                        </picture>
+                        <div class="courses__subbox">
+                            <div class="courses__subbox-1">
+                                <div class="courses__subbox-2">
+                                    <p class="courses__subbox-text-1">10 Weeks</p>
+                                    <p class="courses__subbox-text-2">Intermediate</p>
+                                </div>
+                                <p class="courses__subbox-text-3">By Michael Adams</p>
+                            </div>
+                            <div class="courses__subbox-3">
+                                <h3 class="courses__subbox-title">Front-End Web Development</h3>
+                                <p class="courses__subbox-text-4">Become proficient in front-end web development. Learn HTML, CSS, JavaScript 
+                                    and popular frameworks like Bootstrap and React. Build interactive and responsive websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="courses__card-btn link" href="">Get it Now</a>
+                </li>
+                <li class="courses__card">
+                    <div class="courses__box">
+                        <picture>
+                            <source srcset="./img/courses/image_6-desk.png" media="(min-width: 1024px)">
+                            <source srcset="./img/courses/image_6-tab.png" media="(min-width: 768px)">
+                            <source srcset="./img/courses/image_6-mob.png" media="(max-width: 767px)">
+                            <img class="courses__pic" src="./img/courses/image_6-desk.png" alt="Courses image">
+                        </picture>
+                        <div class="courses__subbox">
+                            <div class="courses__subbox-1">
+                                <div class="courses__subbox-2">
+                                    <p class="courses__subbox-text-1">6 Weeks</p>
+                                    <p class="courses__subbox-text-2">Advance</p>
+                                </div>
+                                <p class="courses__subbox-text-3">By Jennifer Wilson</p>
+                            </div>
+                            <div class="courses__subbox-3">
+                                <h3 class="courses__subbox-title">Advanced JavaScript</h3>
+                                <p class="courses__subbox-text-4">Take your JavaScript skills to the next level. Explore advanced concepts like closures, 
+                                    prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="courses__card-btn link" href="">Get it Now</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials__container">
+            <div class="testimonials__inner">
+                <div class="testimonials__text-box">
+                    <h2 class="testimonials__title">Our Testimonials</h2>
+                    <p class="testimonials__text">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit 
+                        dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
+                    </p>
+                </div>
+                <a class="testimonials__title-btn link" href="">View All</a>
+            </div>
+            <ul class="testimonials__list">
+                <li class="testimonials__item">
+                    <p class="testimonials__message">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, 
+                        and the interactive learning environment was engaging. I highly recommend it!
+                    </p>
+                    <div class="testimonials__guest">
+                        <div class="testimonials__guest-info">
+                            <img class="testimonials__guest-img" src="./img/testimonials/guest-1.png" alt="Guest image">
+                            <p class="testimonials__guest-name">Sarah L</p>
+                        </div>
+                        <a class="testimonials__guest-btn link" href="">Read Full Story</a>
+                    </div>
+                </li>
+                <li class="testimonials__item">
+                    <p class="testimonials__message">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped 
+                        me improve my design skills. I feel more confident in my career now. Thank you!
+                    </p>
+                    <div class="testimonials__guest">
+                        <div class="testimonials__guest-info">
+                            <img class="testimonials__guest-img" src="./img/testimonials/guest-2.png" alt="Guest image">
+                            <p class="testimonials__guest-name">Jason M</p>
+                        </div>
+                        <a class="testimonials__guest-btn link" href="">Read Full Story</a>
+                    </div>
+                </li>
+                <li class="testimonials__item">
+                    <p class="testimonials__message">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me 
+                        grasp the concepts easily. I'm now building my own app. Great course!
+                    </p>
+                    <div class="testimonials__guest">
+                        <div class="testimonials__guest-info">
+                            <img class="testimonials__guest-img" src="./img/testimonials/guest-3.png" alt="Guest image">
+                            <p class="testimonials__guest-name">Emily R</p>
+                        </div>
+                        <a class="testimonials__guest-btn link" href="">Read Full Story</a>
+                    </div>
+                </li>
+                <li class="testimonials__item">
+                    <p class="testimonials__message">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's 
+                        guidance and feedback improved my design abilities significantly. I'm grateful for this course!
+                    </p>
+                    <div class="testimonials__guest">
+                        <div class="testimonials__guest-info">
+                            <img class="testimonials__guest-img" src="./img/testimonials/guest-4.png" alt="Guest image">
+                            <p class="testimonials__guest-name">Michael K</p>
+                        </div>
+                        <a class="testimonials__guest-btn link" href="">Read Full Story</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="pricing__container">
+            <div class="pricing__inner">
+                <div class="pricing__text-box">
+                    <h2 class="pricing__title">Our Pricing</h2>
+                    <p class="pricing__text">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. 
+                        Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
+                    </p>
+                </div>
+                <div class="pricing__tab">
+                    <a class="pricing__btn-1 link" href="">Monthly</a>
+                    <a class="pricing__btn-2 link" href="">Yearly</a>
+                </div>
+            </div>
+            <div class="pricing__box">
+                <div class="pricing__card">
+                    <p class="pricing__plan">Free Plan</p>
+                    <p class="pricing__price">$0<span class="pricing__month">/month</span></p>
+                    <div class="pricing__content">
+                        <h3 class="pricing__feature">Available Features</h3>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Access to selected free courses.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Limited course materials and resources.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Basic community support.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">No certification upon completion.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Ad-supported platform.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/no.png" alt="Checked image">
+                            <p class="pricing__item-text">Access to exclusive Pro Plan community forums.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/no.png" alt="Checked image">
+                            <p class="pricing__item-text">Early access to new courses and updates.</p>
+                        </div>
+                    </div>
+                    <button class="pricing__btn">Get Started</button>
+                </div>
+                <div class="pricing__card">
+                    <p class="pricing__plan">Pro Plan</p>
+                    <p class="pricing__price">$79<span class="pricing__month">/month</span></p>
+                    <div class="pricing__content">
+                        <h3 class="pricing__feature">Available Features</h3>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Unlimited access to all courses.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Unlimited course materials and resources.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Priority support from instructors.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Course completion certificates.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Ad-free experience.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Access to exclusive Pro Plan community forums.</p>
+                        </div>
+                        <div class="pricing__item">
+                            <img class="pricing__item-check" src="./img/pricing/ok.png" alt="Checked image">
+                            <p class="pricing__item-text">Early access to new courses and updates.</p>
+                        </div>
+                    </div>
+                    <button class="pricing__btn">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq__container">
+            <div class="faq__inner">
+                <h2 class="faq__title">Frequently Asked Questions</h2>
+                <p class="faq__text">Still you have any questions? Contact our Team via support@skillbridge.com</p>
+                <a class="faq__btn link" href="">See All FAQ’s</a>
+            </div>
+            <div class="faq__box">
+                <div class="faq__wrapper">
+                    <div class="faq__question">
+                        <p class="faq__question-text">Can I enroll in multiple courses at once?</p>
+                        <span class="faq__simbol">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        <a class="faq__answer-link link" href="">
+                            <p class="faq__answer-link-text">Enrollment Process for Different Courses</p>
+                            <svg class="faq__answer-arrow" width="28" height="28">
+                                <use href="./img/faq/arrow-r.svg#icon-arrow-r"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="faq__wrapper">
+                    <div class="faq__question">
+                        <p class="faq__question-text">What kind of support can I expect from instructors?</p>
+                        <span class="faq__simbol">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        <a class="faq__answer-link link" href="">
+                            <p class="faq__answer-link-text">Enrollment Process for Different Courses</p>
+                            <svg class="faq__answer-arrow" width="28" height="28">
+                                <use href="./img/faq/arrow-r.svg#icon-arrow-r"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="faq__wrapper">
+                    <div class="faq__question">
+                        <p class="faq__question-text">Are the courses self-paced or do they have specific start and end dates?</p>
+                        <span class="faq__simbol">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        <a class="faq__answer-link link" href="">
+                            <p class="faq__answer-link-text">Enrollment Process for Different Courses</p>
+                            <svg class="faq__answer-arrow" width="28" height="28">
+                                <use href="./img/faq/arrow-r.svg#icon-arrow-r"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="faq__wrapper">
+                    <div class="faq__question">
+                        <p class="faq__question-text">Are there any prerequisites for the courses?</p>
+                        <span class="faq__simbol">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        <a class="faq__answer-link link" href="">
+                            <p class="faq__answer-link-text">Enrollment Process for Different Courses</p>
+                            <svg class="faq__answer-arrow" width="28" height="28">
+                                <use href="./img/faq/arrow-r.svg#icon-arrow-r"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="faq__wrapper">
+                    <div class="faq__question">
+                        <p class="faq__question-text">Can I download the course materials for offline access?</p>
+                        <span class="faq__simbol">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        <a class="faq__answer-link link" href="">
+                            <p class="faq__answer-link-text">Enrollment Process for Different Courses</p>
+                            <svg class="faq__answer-arrow" width="28" height="28">
+                                <use href="./img/faq/arrow-r.svg#icon-arrow-r"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__wrapper">
+                <address class="footer__contact">
+                    <a class="footer__logo-link" href="#top">
+                        <img class="footer__logo" src="./img/footer/logo-footer.png" alt="Logo footer">
+                    </a>
+                    <a class="footer__contact-link link" href="">
+                        <svg class="footer__contact-img" width="24" height="24">
+                            <use href="./img/footer/envelope.svg#icon-envelope"></use>
+                        </svg>
+                        <p class="footer__contact-text">hello@skillbridge.com</p>
+                    </a>
+                    <a class="footer__contact-link link" href="">
+                        <svg class="footer__contact-img" width="24" height="24">
+                            <use href="./img/footer/phone.svg#icon-phone"></use>
+                        </svg>
+                        <p class="footer__contact-text">+91 91813 23 2309</p>
+                    </a>
+                    <a class="footer__contact-link link" href="">
+                        <svg class="footer__contact-img" width="24" height="24">
+                            <use href="./img/footer/location.svg#icon-location"></use>
+                        </svg>
+                        <p class="footer__contact-text">Somewhere in the World</p>
+                    </a>
+                </address>
+                <div class="footer__inner">
+                    <div class="footer__home">
+                        <h4 class="footer__home-title">Home</h4>
+                        <a class="footer__home-link link" href="">Benefits</a>
+                        <a class="footer__home-link link" href="">Our Courses</a>
+                        <a class="footer__home-link link" href="">Testimonials</a>
+                        <a class="footer__home-link link" href="">Our FAQ</a>
+                    </div>
+                    <div class="footer__about">
+                        <h4 class="footer__about-title">About Us</h4>
+                        <a class="footer__about-link link" href="">Company</a>
+                        <a class="footer__about-link link" href="">Achievements</a>
+                        <a class="footer__about-link link" href="">Our Goals</a>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <h4 class="footer__social-title">Social Profiles</h4>
+                    <div class="footer__social-group">
+                        <a class="footer__social-link link" href="">
+                            <svg class="footer__social-img">
+                                <use href="./img/footer/facebook.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__social-link link" href="">
+                            <svg class="footer__social-img">
+                                <use href="./img/footer/twitter.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__social-link link" href="">
+                            <svg class="footer__social-img">
+                                <use href="./img/footer/Iinkedin.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer__line">
+            <p class="footer__copyright">© 2024 Skillbridge. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="./js/video.js"></script>
+    <script src="./js/faq.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+.footer {
+    background: var(--absolute-white);
+    &__container {
+        margin: 0 auto;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__contact-link {
+        display: flex;
+        align-items: center;
+    }
+    &__contact-img {
+        vertical-align: middle;
+    }
+    &__contact-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__home-title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__home-link {
+        display: block;
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-35);
+    }
+    &__about-title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__about-link {
+        display: block;
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-35);
+    }
+    &__social-title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__social-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__social-link {
+        border: 1px solid var(--white-95);
+        background: var(--white-97);
+        &:not(:last-child) {
+            margin-right: 14px;
+        }
+    }
+    &__line {
+        border: 1px solid var(--white-95);
+        width: 100%;
+    }
+    &__copyright {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        text-align: center;
+        color: var(--grey-40);
+    }
+}
+
+/* Стили для десктопа */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .footer {
+        width: 1920px;
+        padding: 100px 162px 30px 162px;
+        &__container {
+            width: 1597px;
+            padding-right: 65px;
+        }
+        &__wrapper {
+            margin-bottom: 50px;
+        }
+        &__contact {
+            margin-right: 397px;
+        }
+        &__logo {
+            border-radius: 8px;
+            width: 54px;
+            height: 54px;
+            margin-bottom: 40px;
+            transition: var(--func-transit);
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+        &__contact-link {
+            transition: var(--func-transit);
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            &:hover {
+                color: var(--orange-70);
+            }
+        }
+        &__contact-link * {
+            color: inherit;
+        }
+        &__contact-img {
+            margin-right: 6px;
+        }
+        &__contact-text {
+            font-size: 18px;
+        }
+        &__inner {
+            width: 410px;
+        }
+        &__home-title {
+            font-size: 20px;
+            margin-bottom: 14px;
+        }
+        &__home-link {
+            font-size: 18px;
+            transition: var(--func-transit);
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            &:hover {
+                color: var(--orange-70);
+            }
+        }
+        &__about-title {
+            font-size: 20px;
+            margin-bottom: 14px;
+        }
+        &__about-link {
+            font-size: 18px;
+            transition: var(--func-transit);
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            &:hover {
+                color: var(--orange-70);
+            }
+        }
+        &__social-title {
+            font-size: 20px;
+            margin-bottom: 14px;
+        }
+        &__social-group {
+            max-width: 184px;
+        }
+        &__social-link {
+            border-radius: 8px;
+            padding: 14px;
+            width: 52px;
+            height: 52px;
+            transition: var(--func-transit);
+            &:hover {
+                background: var(--orange-70);
+            }
+        }
+        &__social-img {
+            width: 24px;
+            height: 24px;
+        }
+        &__line {
+            margin-bottom: 50px;
+        }
+        &__copyright {
+            font-size: 18px;
+        }
+    }
+}
+
+/* Стили для планшета */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer {
+        width: 1023px;
+        padding: 60px 80px 20px 80px;
+        &__container {
+            width: 863px;
+            padding-right: 50px;
+        }
+        &__wrapper {
+            margin-bottom: 30px;
+        }
+        &__contact {
+            margin-right: 175px;
+        }
+        &__logo {
+            border-radius: 6px;
+            width: 44px;
+            height: 44px;
+            margin-bottom: 30px;
+        }
+        &__contact-link {
+            &:not(:last-child) {
+                margin-bottom: 14px;
+            }
+        }
+        &__contact-img {
+            margin-right: 4px;
+        }
+        &__contact-text {
+            font-size: 16px;
+        }
+        &__inner {
+            margin-right: 40px;
+        }
+        &__home {
+            margin-right: 40px;
+        }
+        &__home-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__home-link {
+            font-size: 16px;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+        &__about-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__about-link {
+            font-size: 16px;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+        &__social-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__social-group {
+            max-width: 160px;
+        }
+        &__social-link {
+            border-radius: 6px;
+            padding: 8px;
+            width: 42px;
+            height: 42px;
+        }
+        &__social-img {
+            width: 24px;
+            height: 24px;
+        }
+        &__line {
+            margin-bottom: 30px;
+        }
+        &__copyright {
+            font-size: 14px;
+        }
+    }
+}
+
+/* Стили для мобильного */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .footer {
+        padding: 50px 20px 24px 20px;
+        &__container {
+            width: 390px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+        &__contact {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+        &__logo {
+            border-radius: 6px;
+            width: 44px;
+            height: 44px;
+            margin-bottom: 30px;
+        }
+        &__contact-link {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+        &__contact-img {
+            margin-right: 6px;
+        }
+        &__contact-text {
+            font-size: 15px;
+        }
+        &__inner {
+            max-width: 390px;
+            margin-bottom: 24px;
+        }
+        &__home {
+            margin-right: 66px;
+        }
+        &__home-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__home-link {
+            font-size: 14px;
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+        }
+        &__about-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__about-link {
+            font-size: 14px;
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+        }
+        &__social-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__social-group {
+            max-width: 160px;
+        }
+        &__social-link {
+            border-radius: 6px;
+            padding: 8px;
+            width: 42px;
+            height: 42px;
+            &:not(:last-child) {
+                margin-right: 14px;
+            }
+        }
+        &__social-img {
+            width: 24px;
+            height: 24px;
+        }
+        &__line {
+            margin-bottom: 20px;
+        }
+        &__copyright {
+            font-size: 14px;
+        }
+    }
+}

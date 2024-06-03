@@ -1,0 +1,81 @@
+.card {
+    background: var(--white-97);
+    &__list {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--white-95);
+        background: var(--white-99);
+        margin: 0 auto;
+    }
+    &__line {
+        border: 1px solid var(--white-95);
+        height: 0px;
+        transform: rotate(-90deg);
+    }
+}
+
+/* Стили для десктопа */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .card {
+        width: 1920px;
+        &__list {
+            flex-wrap: nowrap;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 1595px;
+        }
+        &__item {
+            padding: 30px 40px;
+            width: 219px;
+            height: 94px;
+        }
+        &__line {
+            width: 94px;
+        }
+    }
+}
+
+/* Стили для планшета */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        width: 1023px;
+        &__list {
+            flex-wrap: nowrap;
+            border-radius: 8px;
+            padding: 24px;
+            max-width: 1000px;
+        }
+        &__item {
+            padding: 20px 30px;
+            width: 175px;
+            height: 68px;
+        }
+        &__line {
+            width: 68px;
+        }
+    }
+}
+
+/* Стили для мобильного */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .card {
+        width: 100%;
+        &__list {
+            white-space: nowrap; /* Запрет переноса элементов на новую строку */
+            overflow-x: auto; /* Разрешение на горизонтальную прокрутку */
+            -webkit-overflow-scrolling: touch; /* Плавная прокрутка на iOS */
+            border-radius: 8px;
+            padding: 10px;
+            max-width: 90%;
+        }
+        &__item {
+            flex: 0 0 auto; /* Разрешение элементам уменьшаться при необходимости */
+            padding: 20px 30px;
+            width: 112px;
+            height: 64px;
+        }
+        &__line {
+            width: 64px;
+        }
+    }
+}

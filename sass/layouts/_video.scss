@@ -1,0 +1,88 @@
+.video {
+    display: flex;
+    justify-content: center;
+    background: var(--white-97);
+}
+
+.video__vid {
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+.video__vid .video__play {
+    width: 100%; /* Ширина видео контейнера */
+}
+
+.video__message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+/* Стили для десктопа */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .video {
+        width: 1920px;
+        padding: 88px 0 150px 0;
+    }
+    
+    .video__img {
+        cursor: pointer;
+    }
+    
+    .video__vid .video__play {
+        max-width: 1024px; /* Максимальная ширина видео */
+        border-radius: 10px;
+    }
+    
+    .video__message {
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
+
+/* Стили для планшета */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .video {
+        width: 1023px;
+        padding: 80px 0 100px 0;
+    }
+    
+    .video__vid .video__play {
+        max-width: 768px; /* Максимальная ширина видео */
+        border-radius: 8px;
+    }
+    
+    .video__message {
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+}
+
+/* Стили для мобильного */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .video {
+        width: 100%;
+        max-width: 767px;
+        padding: 30px 0 50px 0;
+    }
+    
+    .video__vid .video__play {
+        max-width: 358px; /* Максимальная ширина видео */
+        border-radius: 3px;
+    }
+    
+    .video__message {
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 3px;
+    }
+}

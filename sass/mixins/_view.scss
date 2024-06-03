@@ -1,0 +1,53 @@
+@mixin view-btn {
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    color: var(--grey-15);
+    border: 1px solid var(--white-95);
+    background: var(--white-99);
+}
+
+/* Стили для десктопа */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .benefits__title-btn,
+    .courses__title-btn,
+    .testimonials__title-btn {
+        @include view-btn;
+        font-size: 18px;
+        border-radius: 8px;
+        padding: 18px 24px;
+        transition: var(--func-transit);
+    }
+    .benefits__title-btn:hover,
+    .courses__title-btn:hover,
+    .testimonials__title-btn:hover {
+        color: var(--white-99);
+        background: var(--grey-15);
+    }
+}
+
+/* Стили для планшета */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .benefits__title-btn,
+    .courses__title-btn,
+    .testimonials__title-btn {
+        @include view-btn;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 14px 20px;
+    }
+}
+
+/* Стили для мобильного */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .benefits__title-btn,
+    .courses__title-btn,
+    .testimonials__title-btn {
+        @include view-btn;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 14px 20px;
+        margin-right: auto;
+    }
+}
