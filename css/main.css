@@ -1318,6 +1318,7 @@ video {
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 40px;
+    padding: 0 16px;
   }
   .courses__title {
     font-size: 28px;
@@ -1594,6 +1595,7 @@ video {
   .testimonials__inner {
     flex-direction: column;
     margin-bottom: 40px;
+    padding: 0 16px;
   }
   .testimonials__title {
     font-size: 28px;
@@ -1943,6 +1945,7 @@ video {
   .pricing__inner {
     flex-direction: column;
     margin-bottom: 40px;
+    padding: 0 16px;
   }
   .pricing__title {
     font-size: 28px;
@@ -2456,7 +2459,7 @@ video {
     transition: var(--func-transit);
   }
   .footer__logo:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
   .footer__contact-link {
     transition: var(--func-transit);
@@ -2622,7 +2625,7 @@ video {
     padding: 50px 20px 24px 20px;
   }
   .footer__container {
-    width: 390px;
+    width: 357px;
   }
   .footer__wrapper {
     flex-direction: column;

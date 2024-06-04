@@ -105,7 +105,7 @@
             margin-bottom: 40px;
             transition: var(--func-transit);
             &:hover {
-                transform: scale(0.9);
+                transform: scale(0.95);
             }
         }
         &__contact-link {
@@ -276,7 +276,7 @@
     .footer {
         padding: 50px 20px 24px 20px;
         &__container {
-            width: 390px;
+            width: 357px;
         }
         &__wrapper {
             flex-direction: column;
