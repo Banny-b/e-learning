@@ -1318,7 +1318,7 @@ video {
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 40px;
-    padding: 0 18px;
+    padding: 0 16px;
   }
   .courses__title {
     font-size: 28px;
@@ -1595,7 +1595,7 @@ video {
   .testimonials__inner {
     flex-direction: column;
     margin-bottom: 40px;
-    padding: 0 18px;
+    padding: 0 16px;
   }
   .testimonials__title {
     font-size: 28px;
@@ -1945,7 +1945,7 @@ video {
   .pricing__inner {
     flex-direction: column;
     margin-bottom: 40px;
-    padding: 0 18px;
+    padding: 0 16px;
   }
   .pricing__title {
     font-size: 28px;
