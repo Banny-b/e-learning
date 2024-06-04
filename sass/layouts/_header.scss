@@ -30,6 +30,17 @@
         display: flex;
         align-items: center;
     }
+    &__link {
+        position: relative;
+    }
+    &__link.active::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        background-color: var(--orange-50);
+    }
     &__but {
         display: flex;
         align-items: center;
@@ -97,6 +108,10 @@
                 background: var(--white-95);
             }
         }
+        &__link.active::after {
+            bottom: -2px;
+            width: 90px;
+        }
         &__but-authoriz-s {
             font-size: 18px;
             border-radius: 8px;
@@ -156,6 +171,10 @@
             color: var(--grey-15);
             border-radius: 6px;
             padding: 12px 20px;
+        }
+        &__link.active::after {
+            bottom: -1px;
+            width: 70px;
         }
         &__but-authoriz-s {
             font-size: 14px;

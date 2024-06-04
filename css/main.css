@@ -258,6 +258,17 @@ video {
   display: flex;
   align-items: center;
 }
+.nav-bar__link {
+  position: relative;
+}
+.nav-bar__link.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: var(--orange-50);
+}
 .nav-bar__but {
   display: flex;
   align-items: center;
@@ -325,6 +336,10 @@ video {
   .nav-bar__link:hover {
     background: var(--white-95);
   }
+  .nav-bar__link.active::after {
+    bottom: -2px;
+    width: 90px;
+  }
   .nav-bar__but-authoriz-s {
     font-size: 18px;
     border-radius: 8px;
@@ -383,6 +398,10 @@ video {
     color: var(--grey-15);
     border-radius: 6px;
     padding: 12px 20px;
+  }
+  .nav-bar__link.active::after {
+    bottom: -1px;
+    width: 70px;
   }
   .nav-bar__but-authoriz-s {
     font-size: 14px;
