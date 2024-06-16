@@ -42,14 +42,27 @@
             <div class="nav-bar__but">
                 <a class="nav-bar__but-authoriz-s link" href="">Sign Up</a>
                 <a class="nav-bar__but-authoriz-l link" href="">Log In</a>
-                <a class="nav-bar__but-burger" href="">
-                    <svg class="nav-bar__but-img" width="34" height="34">
-                        <use href="./img/header/burger.svg#burger"></use>
-                    </svg>
-                </a>
+                <svg class="nav-bar__but-img" width="34" height="34" id="mob-menu-open">
+                    <use href="./img/header/burger.svg#burger"></use>
+                </svg>
             </div>
         </div>
     </header>
+    <!-- Mobille menu -->
+    <div class="mobile__menu" id="mob-menu-data">
+        <div class="mobile__menu-container">
+            <svg class="mobile__menu-close" width="40" height="40" id="mob-menu-close">
+                <use href="./img/header/close.svg#icon-cross"></use>
+            </svg>
+            <ul class="mobile__menu-list">
+                <li class="mobile__menu-item"><a class="mobile__menu-link link" href="./index.html">Home</a></li>
+                <li class="mobile__menu-item"><a class="mobile__menu-link current link" href="">Courses</a></li>
+                <li class="mobile__menu-item"><a class="mobile__menu-link link" href="">About Us</a></li>
+                <li class="mobile__menu-item"><a class="mobile__menu-link link" href="">Pricing</a></li>
+                <li class="mobile__menu-item"><a class="mobile__menu-link link" href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     <!-- Training -->
     <section class="training">
         <div class="training__container">
@@ -380,5 +393,7 @@
             <p class="footer__copyright">© 2024 Skillbridge. All rights reserved.</p>
         </div>
     </footer>
+    <!-- Script -->
+    <script src="./js/mobileMenu.js"></script>
 </body>
 </html>

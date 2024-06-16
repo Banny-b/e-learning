@@ -2724,6 +2724,44 @@ video {
     font-size: 13px;
   }
 }
+.mobile__menu {
+  display: none;
+  background: var(--white-97);
+}
+.mobile__menu-container {
+  position: relative;
+  width: 100%;
+  max-width: 767px;
+  border: 2px solid var(--orange-50);
+  border-radius: 5px;
+  padding: 60px 0;
+  margin: 0 auto;
+}
+.mobile__menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: var(--orange-50);
+}
+.mobile__menu-item {
+  text-align: center;
+}
+.mobile__menu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.mobile__menu-link {
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--orange-50);
+  padding: 5px;
+}
+
+.current {
+  border-bottom: 1px solid var(--orange-50);
+}
+
 .training {
   background: var(--white-97);
 }
