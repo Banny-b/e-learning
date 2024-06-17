@@ -2738,7 +2738,7 @@ video {
 .mobile__menu-container {
   position: relative;
   width: 100%;
-  max-width: 480px;
+  max-width: 360px;
   background: var(--white-97);
   border: 2px solid var(--orange-50);
   border-radius: 10px;
