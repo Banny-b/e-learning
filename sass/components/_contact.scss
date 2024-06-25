@@ -1,0 +1,460 @@
+.contact {
+    background: var(--white-97);
+    &__container {
+        margin: 0 auto;
+    }
+    &__upper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__upper-title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__upper-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-35);
+    }
+    &__line {
+        width: 100%;
+        border-bottom: 1px solid var(--white-90);
+    }
+    &__content {
+        display: flex;
+        background: var(--absolute-white);
+        border-radius: 12px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__form-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form-label {
+        display: block;
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__form-input {
+        display: block;
+        border: 1px solid var(--white-95);
+        background: var(--white-99);
+    }
+    &__form-label-sub {
+        display: block;
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__form-input-sub {
+        display: block;
+        border: 1px solid var(--white-95);
+        background: var(--white-99);
+    }
+    &__form-label-mess {
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__form-textarea {
+        border: 1px solid var(--white-95);
+        resize: none;
+    }
+    &__form-btn {
+        display: block;
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        text-align: center;
+        color: var(--absolute-white);
+        margin: 0 auto;
+        background: var(--orange-50);
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    &__buttons-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid var(--white-95);
+        background: var(--white-99);
+    }
+    &__buttons-link {
+        border: 1px solid var(--white-95);
+        background: var(--white-97);
+    }
+    &__buttons-social-box {
+        display: flex;
+        align-items: center;
+    }
+    &__buttons-social-link {
+        border: 1px solid var(--white-95);
+        background: var(--white-97);
+    }
+    &__buttons-text,
+    &__buttons-social-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        text-align: center;
+        color: var(--grey-30);
+    }
+}
+
+/* Стили для десктопа */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .contact {
+        width: 1920px;
+        padding: 110px 0 150px 0;
+        &__container {
+            width: 1597px;
+        }
+        &__upper {
+            padding: 0 0 50px 0;
+        }
+        &__upper-title {
+            font-size: 48px;
+            max-width: 748px;
+        }
+        &__upper-text {
+            font-size: 18px;
+            max-width: 748px;
+        }
+        &__line {
+            margin-bottom: 100px;
+        }
+        &__box {
+            border-right: 1px solid var(--white-95);
+            padding: 80px;
+            width: 67%;
+        }
+        &__form-label {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        &__form-input {
+            border-radius: 8px;
+            padding: 24px 20px;
+            width: 443px;
+            height: 68px;
+            margin-top: 16px;
+        }
+        &__form-label-sub {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        &__form-input-sub {
+            border-radius: 8px;
+            padding: 24px 20px;
+            width: 912px;
+            height: 68px;
+            margin-top: 16px;
+        }
+        &__form-label-mess {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+        &__form-textarea {
+            border-radius: 8px;
+            padding: 24px 20px;
+            width: 912px;
+            height: 170px;
+            margin-top: 16px;
+        }
+        &__form-btn {
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 18px 24px;
+            width: 220px;
+            transition: var(--func-transit);
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        &__buttons {
+            padding: 80px;
+            width: 33%;
+        }
+        &__buttons-item {
+            border-radius: 8px;
+            padding: 30px;
+            width: 360px;
+            height: 154px;
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+        }
+        &__buttons-link {
+            border-radius: 8px;
+            padding: 14px;
+            width: 52px;
+            height: 52px;
+            transition: var(--func-transit);
+            &:hover {
+                background: var(--orange-50);
+            }
+        }
+        &__buttons-img {
+            width: 24px;
+            height: 24px;
+        }
+        &__buttons-social-box {
+            gap: 14px;
+        }
+        &__buttons-social-link {
+            border-radius: 8px;
+            padding: 14px;
+            width: 52px;
+            height: 52px;
+            transition: var(--func-transit);
+            &:hover {
+                background: var(--orange-50);
+            }
+        }
+        &__social-img {
+            width: 24px;
+            height: 24px;
+        }
+        &__buttons-text,
+        &__buttons-social-text {
+            font-size: 18px;
+        }
+    }
+}
+
+/* Стили для планшета */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact {
+        width: 1023px;
+        padding: 80px 0;
+        &__container {
+            width: 863px;
+        }
+        &__upper {
+            padding: 0 0 40px 0;
+        }
+        &__upper-title {
+            font-size: 38px;
+            max-width: 410px;
+        }
+        &__upper-text {
+            font-size: 16px;
+            max-width: 410px;
+        }
+        &__line {
+            margin-bottom: 80px;
+        }
+        &__box {
+            border-right: 1px solid var(--white-95);
+            padding: 60px;
+            width: 67%;
+        }
+        &__form-label {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        &__form-input {
+            border-radius: 6px;
+            padding: 20px;
+            width: 220px;
+            height: 60px;
+            margin-top: 12px;
+        }
+        &__form-label-sub {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        &__form-input-sub {
+            border-radius: 6px;
+            padding: 20px;
+            width: 456px;
+            height: 60px;
+            margin-top: 12px;
+        }
+        &__form-label-mess {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        &__form-textarea {
+            border-radius: 6px;
+            padding: 20px;
+            width: 456px;
+            height: 138px;
+            margin-top: 12px;
+        }
+        &__form-btn {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 14px 20px;
+            width: 174px;
+        }
+        &__buttons {
+            padding: 60px;
+            width: 33%;
+        }
+        &__buttons-item {
+            border-radius: 6px;
+            padding: 30px;
+            width: 167px;
+            height: 143px;
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+        }
+        &__buttons-link {
+            border-radius: 6px;
+            padding: 7px;
+            width: 38px;
+            height: 38px;
+        }
+        &__buttons-img {
+            width: 22px;
+            height: 22px;
+        }
+        &__buttons-social-box {
+            gap: 10px;
+        }
+        &__buttons-social-link {
+            border-radius: 6px;
+            padding: 7px;
+            width: 38px;
+            height: 38px;
+        }
+        &__social-img {
+            width: 22px;
+            height: 22px;
+        }
+        &__buttons-text,
+        &__buttons-social-text {
+            font-size: 14px;
+        }
+    }
+}
+
+/* Стили для мобильного */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .contact {
+        padding: 50px 0;
+        &__container {
+            width: 357px;
+        }
+        &__upper {
+            flex-direction: column;
+            padding: 0 15px 30px 15px;
+        }
+        &__upper-title {
+            font-size: 28px;
+            max-width: 357px;
+            margin-bottom: 16px;
+        }
+        &__upper-text {
+            font-size: 14px;
+            max-width: 357px;
+        }
+        &__line {
+            margin-bottom: 50px;
+        }
+        &__content {
+            flex-direction: column;
+        }
+        &__box {
+            border-bottom: 1px solid var(--white-95);
+            padding: 30px;
+        }
+        &__form-inner {
+            flex-direction: column;
+        }
+        &__form-label {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        &__form-input {
+            border-radius: 6px;
+            padding: 20px;
+            width: 298px;
+            height: 60px;
+            margin-top: 12px;
+        }
+        &__form-label-sub {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        &__form-input-sub {
+            border-radius: 6px;
+            padding: 20px;
+            width: 298px;
+            height: 60px;
+            margin-top: 12px;
+        }
+        &__form-label-mess {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        &__form-textarea {
+            border-radius: 6px;
+            padding: 20px;
+            width: 298px;
+            height: 138px;
+            margin-top: 12px;
+        }
+        &__form-btn {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 14px 20px;
+            width: 298px;
+        }
+        &__buttons {
+            padding: 30px;
+        }
+        &__buttons-item {
+            border-radius: 6px;
+            padding: 30px;
+            width: 298px;
+            height: 139px;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &__buttons-link {
+            border-radius: 6px;
+            padding: 7px;
+            width: 38px;
+            height: 38px;
+        }
+        &__buttons-img {
+            width: 22px;
+            height: 22px;
+        }
+        &__buttons-social-box {
+            gap: 10px;
+        }
+        &__buttons-social-link {
+            border-radius: 6px;
+            padding: 7px;
+            width: 38px;
+            height: 38px;
+        }
+        &__social-img {
+            width: 22px;
+            height: 22px;
+        }
+        &__buttons-text,
+        &__buttons-social-text {
+            font-size: 14px;
+        }
+    }
+}
