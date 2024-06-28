@@ -456,6 +456,7 @@ video {
   }
   .nav-bar__but-img {
     display: block;
+    margin-left: 8px;
   }
 }
 .hero {
