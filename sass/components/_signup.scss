@@ -431,15 +431,15 @@
     }
     
     //* Глаз в поле Пароль
-    // .signup__form-input {
-    //     padding-right: 10px; /* Чтобы иконка не перекрывала текст */
-    // }
-    // .toggle-password {
-    //     right: 10px;
-    // }
-    i {
-        position: absolute;
-        top: 7px;
-        right: 6px;
+    .signup__form-input {
+        padding-right: 10px; /* Чтобы иконка не перекрывала текст */
     }
+    .toggle-password {
+        right: 10px;
+    }
+    // i {
+    //     position: absolute;
+    //     top: 7px;
+    //     right: 6px;
+    // }
 }
