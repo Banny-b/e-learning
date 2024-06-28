@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -35,12 +36,12 @@
                         <li class="nav-bar__item"><a class="nav-bar__link link" href="./training.html">Courses</a></li>
                         <li class="nav-bar__item"><a class="nav-bar__link link" href="./about.html">About Us</a></li>
                         <li class="nav-bar__item"><a class="nav-bar__link link" href="">Pricing</a></li>
-                        <li class="nav-bar__item"><a class="nav-bar__link active link" href="">Contact</a></li>
+                        <li class="nav-bar__item"><a class="nav-bar__link link" href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="nav-bar__but">
-                <a class="nav-bar__but-authoriz-s link" href="">Sign Up</a>
+                <a class="nav-bar__but-authoriz-s link" href="./signup.html">Sign Up</a>
                 <a class="nav-bar__but-authoriz-l link" href="">Log In</a>
                 <svg class="nav-bar__but-img" width="34" height="34" id="mob-menu-open">
                     <use href="./img/header/burger.svg#burger"></use>
@@ -59,97 +60,44 @@
                 <li class="mobile__menu-item"><a class="mobile__menu-link link" href="./training.html">Courses</a></li>
                 <li class="mobile__menu-item"><a class="mobile__menu-link link" href="./about.html">About Us</a></li>
                 <li class="mobile__menu-item"><a class="mobile__menu-link link" href="">Pricing</a></li>
-                <li class="mobile__menu-item"><a class="mobile__menu-link current link" href="">Contact</a></li>
+                <li class="mobile__menu-item"><a class="mobile__menu-link link" href="./contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
-    <!-- Contact -->
-    <section class="contact">
-        <div class="contact__container">
-            <div class="contact__upper">
-                <h2 class="contact__upper-title">Contact Us</h2>
-                <p class="contact__upper-text">Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater 
-                    to your needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether 
-                    you're an individual looking to enhance your skills or a business seeking professional development solutions, we have a 
-                    plan that suits you. Explore our pricing options below and choose the one that best fits your requirements.
-                </p>
-            </div>
-            <hr class="contact__line">
-            <div class="contact__content">
-                <div class="contact__box">
-                    <form class="contact__form">
-                        <div class="contact__form-inner">
-                            <label class="contact__form-label">First Name
-                                <input class="contact__form-input" type="text" placeholder="Enter First Name" required>
-                            </label>
-                            <label class="contact__form-label">Last Name
-                                <input class="contact__form-input" type="text" placeholder="Enter Last Name" required>
-                            </label>
-                        </div>
-                        <div class="contact__form-inner">
-                            <label class="contact__form-label">E-mail
-                                <input class="contact__form-input" type="email" placeholder="Enter your E-mail" required>
-                            </label>
-                            <label class="contact__form-label">Phone
-                                <input class="contact__form-input" type="tel" placeholder="Enter phone number" required>
-                            </label>
-                        </div>
-                        <label class="contact__form-label-sub">Subject
-                            <input class="contact__form-input-sub" type="text" placeholder="Enter your subject">
-                        </label>
-                        <label class="contact__form-label-mess">Message
-                            <textarea class="contact__form-textarea"  name="message" placeholder="Enter your message here..."></textarea>
-                        </label>
-                        <button class="contact__form-btn" type="submit">Send Your Message</button>
-                    </form>
+    <!-- Log In -->
+    <section class="login">
+        <div class="login__container">
+            <form class="login__form">
+                <h3 class="login__form-title">Log In</h3>
+                <p class="login__form-text">Welcome back! Please log in to access your account.</p>
+                <label class="login__form-field">
+                    <span class="login__form-descr">E-mail</span>
+                    <input class="login__form-input" type="email" name="user_email" placeholder="Enter your E-mail" required>
+                </label>
+                <label class="login__form-field">
+                    <span class="login__form-descr">Password</span>
+                    <input class="login__form-input" id="password" type="password" name="user_password" minlength="8" placeholder="Enter your Password" required>
+                    <span id="togglePassword" class="toggle-password"><i class="fas fa-eye"></i></span>
+                </label>
+                <a class="login__form-forgot link" href="#">Forgot Password?</a>
+                <label class="login__form-policy">
+                    <input class="login__form-checkbox" type="checkbox">
+                    Remember Me
+                </label>
+                <button class="login__form-btn" type="submit">Log In</button>
+                <div class="login__form-divider">Or</div>
+                <a class="login__form-btn-google link" href="https://about.google/intl/account/">
+                    <img class="login__form-btn-google-img" src="./img/signup/google.png" alt="Logo Google">
+                    <p class="login__form-btn-google-text">Log In with Google</p>
+                </a>
+                <div class="login__form-signup">Don’t have an account?  
+                    <a class="login__form-signup-link" href="./signup.html">Sign Up
+                        <svg class="login__form-signup-arrow">
+                            <use href="./img/signup/arrow-ur.svg#icon-arrow-ur"></use>
+                        </svg>
+                    </a>
                 </div>
-                <ul class="contact__buttons">
-                    <li class="contact__buttons-item">
-                        <a class="contact__buttons-link link" href="">
-                            <svg class="contact__buttons-img">
-                                <use href="./img/footer/envelope.svg#icon-envelope"></use>
-                            </svg>
-                        </a>
-                        <p class="contact__buttons-text">hello@skillbridge.com</p>
-                    </li>
-                    <li class="contact__buttons-item">
-                        <a class="contact__buttons-link link" href="">
-                            <svg class="contact__buttons-img">
-                                <use href="./img/footer/phone.svg#icon-phone"></use>
-                            </svg>
-                        </a>
-                        <p class="contact__buttons-text">+91 91813 23 2309</p>
-                    </li>
-                    <li class="contact__buttons-item">
-                        <a class="contact__buttons-link link" href="">
-                            <svg class="contact__buttons-img">
-                                <use href="./img/footer/location.svg#icon-location"></use>
-                            </svg>
-                        </a>
-                        <p class="contact__buttons-text">Somewhere in the World</p>
-                    </li>
-                    <li class="contact__buttons-item">
-                        <div class="contact__buttons-social-box">
-                            <a class="contact__buttons-social-link link" href="">
-                                <svg class="contact__social-img">
-                                    <use href="./img/footer/facebook.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                            <a class="contact__buttons-social-link link" href="">
-                                <svg class="contact__social-img">
-                                    <use href="./img/footer/twitter.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                            <a class="contact__buttons-social-link link" href="">
-                                <svg class="contact__social-img">
-                                    <use href="./img/footer/Iinkedin.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <p class="contact__buttons-social-text">Social Profiles</p>
-                    </li>
-                </ul>
-            </div>
+            </form>
         </div>
     </section>
     <!-- Footer -->
@@ -219,7 +167,8 @@
             <p class="footer__copyright">© 2024 Skillbridge. All rights reserved.</p>
         </div>
     </footer>
-    <!-- Script -->
+    <!-- Scripts -->
     <script src="./js/mobileMenu.js"></script>
+    <script src="./js/eyePass.js"></script>
 </body>
 </html>

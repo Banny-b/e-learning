@@ -1,0 +1,460 @@
+.login {
+    background: var(--white-97);
+    &__container {
+        margin: 0 auto;
+    }
+    &__form {
+        display: block;
+        background: var(--absolute-white);
+        margin: 0 auto;
+    }
+    &__form-title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        text-align: center;
+        color: var(--grey-15);
+    }
+    &__form-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        text-align: center;
+        color: var(--grey-30);
+    }
+    &__form-field {
+        display: block;
+    }
+    &__form-descr {
+        display: block;
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__form-input {
+        display: block;
+        border: 1px solid var(--white-95);
+        background: var(--white-99);
+        &::placeholder {
+            font-family: var(--font-family);
+            font-weight: 400;
+            line-height: 150%;
+            color: var(--grey-40);
+        }
+    }
+    &__form-forgot {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 150%;
+    text-align: right;
+    color: var(--grey-30);
+    }
+    &__form-policy {
+        display: flex;
+        align-items: center;
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-35);
+    }
+    &__form-checkbox {
+        border: 1px solid var(--white-95);
+        border-radius: 4px;
+        background: var(--white-97);
+    }
+    &__form-policy-link {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-35);
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+    &__form-btn {
+        display: block;
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        text-align: center;
+        color: var(--absolute-white);
+        background: var(--orange-50);
+    }
+    &__form-divider {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 14px 0;
+        font-family: var(--second-family);
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--grey-60);
+    }
+    //* Полоса для текста внутри
+    &__form-divider::before,
+    &__form-divider::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid var(--white-90);
+    }
+    &__form-btn-google {
+        display: flex;
+        justify-content: center;
+        border: 1px solid var(--white-95);
+        background: var(--white-97);
+    }
+    &__form-btn-google-img {
+        margin-right: 14px;
+    }
+    &__form-btn-google-text {
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--grey-15);
+    }
+    &__form-signup {
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 150%;
+        text-align: center;
+        color: var(--grey-15);
+    }
+    &__form-signup-link {
+        font-family: var(--font-family);
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--grey-15);
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+    &__form-signup-arrow {
+        vertical-align: middle;
+        margin-left: 6px;
+    }
+}
+
+//* Глаз в поле Пароль
+.login__form-field {
+    position: relative;
+    width: fit-content;
+}
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    cursor: pointer;
+    color: var(--grey-60); /* Серый цвет иконки */
+}
+
+/* Стили для десктопа */
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .login {
+        width: 1920px;
+        padding: 100px 0 150px 0;
+        &__container {
+            width: 1597px;
+        }
+        &__form {
+            width: 660px;
+            border-radius: 12px;
+            padding: 50px;
+        }
+        &__form-title {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+        &__form-text {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+        &__form-field {
+            margin-bottom: 24px;
+        }
+        &__form-descr {
+            font-size: 18px;
+            margin-bottom: 14px;
+        }
+        &__form-input {
+            border-radius: 10px;
+            padding: 24px;
+            width: 560px;
+            height: 75px;
+            &::placeholder {
+                font-size: 18px;
+            }
+        }
+        &__form-forgot {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        &__form-policy {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+        &__form-checkbox {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        &__form-policy-link {
+            font-size: 18px;
+        }
+        &__form-btn {
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 18px 20px;
+            width: 560px;
+            margin-bottom: 30px;
+        }
+        &__form-divider {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        //* Полоса для текста внутри
+        &__form-divider:not(:empty)::before {
+            margin-right: 0.25em;
+        }
+        &__form-divider:not(:empty)::after {
+            margin-left: 0.25em;
+        }
+        &__form-btn-google {
+            border-radius: 10px;
+            padding: 20px 24px;
+            width: 560px;
+            margin-bottom: 30px;
+        }
+        &__form-btn-google-img {
+            width: 30px;
+            height: 30px;
+        }
+        &__form-btn-google-text {
+            font-size: 18px;
+        }
+        &__form-signup {
+            font-size: 18px;
+        }
+        &__form-signup-link {
+            font-size: 18px;
+        }
+        &__form-signup-arrow {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    
+    //* Глаз в поле Пароль
+    .login__form-input {
+        padding-right: 30px; /* Чтобы иконка не перекрывала текст */
+    }
+    .toggle-password {
+        right: 20px;
+    }
+}
+
+/* Стили для планшета */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .login {
+        width: 1023px;
+        padding: 80px 0 100px 0;
+        &__container {
+            width: 863px;
+        }
+        &__form {
+            width: 540px;
+            border-radius: 10px;
+            padding: 40px;
+        }
+        &__form-title {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+        &__form-text {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        &__form-field {
+            margin-bottom: 20px;
+        }
+        &__form-descr {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        &__form-input {
+            border-radius: 8px;
+            padding: 20px;
+            width: 460px;
+            height: 64px;
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+        &__form-forgot {
+            font-size: 16px;
+            margin-bottom: 20px; //*
+        }
+        &__form-policy {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        &__form-checkbox {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        &__form-policy-link {
+            font-size: 16px;
+        }
+        &__form-btn {
+            font-size: 14px;
+            border-radius: 8px;
+            padding: 14px 20px;
+            width: 460px;
+            margin-bottom: 24px;
+        }
+        &__form-divider {
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        //* Полоса для текста внутри
+        &__form-divider:not(:empty)::before {
+            margin-right: 0.15em;
+        }
+        &__form-divider:not(:empty)::after {
+            margin-left: 0.15em;
+        }
+        &__form-btn-google {
+            border-radius: 8px;
+            padding: 16px 24px;
+            width: 460px;
+            margin-bottom: 24px;
+        }
+        &__form-btn-google-img {
+            width: 24px;
+            height: 24px;
+        }
+        &__form-btn-google-text {
+            font-size: 14px;
+        }
+        &__form-signup {
+            font-size: 16px;
+        }
+        &__form-signup-link {
+            font-size: 16px;
+        }
+        &__form-signup-arrow {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    
+    //* Глаз в поле Пароль
+    .login__form-input {
+        padding-right: 20px; /* Чтобы иконка не перекрывала текст */
+    }
+    .toggle-password {
+        right: 15px;
+    }
+}
+
+/* Стили для мобильного */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .login {
+        padding: 50px 0;
+        &__container {
+            width: 357px;
+        }
+        &__form {
+            width: 357px;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        &__form-title {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        &__form-text {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        &__form-field {
+            margin-bottom: 20px;
+        }
+        &__form-descr {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        &__form-input {
+            border-radius: 8px;
+            padding: 18px;
+            width: 297px;
+            height: 61px;
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+        &__form-forgot {
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+        &__form-policy {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        &__form-checkbox {
+            width: 24px;
+            height: 24px;
+            margin-right: 6px;
+        }
+        &__form-policy-link {
+            font-size: 12px;
+        }
+        &__form-btn {
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 14px 20px;
+            width: 297px;
+            margin-bottom: 24px;
+        }
+        &__form-divider {
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        //* Полоса для текста внутри
+        &__form-divider:not(:empty)::before {
+            margin-right: 0.10em;
+        }
+        &__form-divider:not(:empty)::after {
+            margin-left: 0.10em;
+        }
+        &__form-btn-google {
+            border-radius: 8px;
+            padding: 16px 24px;
+            width: 297px;
+            margin-bottom: 24px;
+        }
+        &__form-btn-google-img {
+            width: 24px;
+            height: 24px;
+        }
+        &__form-btn-google-text {
+            font-size: 14px;
+        }
+        &__form-signup {
+            font-size: 14px;
+        }
+        &__form-signup-link {
+            font-size: 14px;
+        }
+        &__form-signup-arrow {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    
+    //* Глаз в поле Пароль
+    .login__form-input {
+        padding-right: 10px; /* Чтобы иконка не перекрывала текст */
+    }
+    .toggle-password {
+        right: 10px;
+    }
+}
